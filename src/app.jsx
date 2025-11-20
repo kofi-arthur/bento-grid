@@ -50,7 +50,29 @@ export default function App() {
                     </div>
                 </div>
 
-                <div className={styles.todo}></div>
+                <div className={styles.todo}>
+                    <div className={styles.todoHeader}>
+                        <h2>Today's To Do</h2>
+                        <span className={styles.date}>September 12</span>
+                    </div>
+
+                    <div className={styles.flipContainer}>
+                        <div className={styles.flip}><p>Scheduled</p></div>
+                        <div className={styles.flip}><p>Notes</p></div>
+                    </div>
+
+                    <section className={styles.list}>
+                        <div className={styles.listItem}>
+                            <h3 className={styles.title}>Jake's design</h3>
+                            <span className={styles.time}>9:00 - 09:45</span>
+                        </div>
+
+                        <div className={styles.listItem}>
+                            <h3 className={styles.title}>Martha's appointment</h3>
+                            <span className={styles.time}>11:30 - 12:45</span>
+                        </div>
+                    </section>
+                </div>
             </section>
 
             <section className={styles.bentoBox}>
