@@ -1,0 +1,103 @@
+.bentoLayout {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 28rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1.5fr;
+  place-items: center;
+  gap: 1.5rem;
+
+  .bentoBox {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 1.5rem;
+
+    &:nth-child(1) {
+      grid-template-columns: 1.5fr 0.5fr;
+    }
+
+    &:nth-child(2) {
+      grid-template-columns: 0.5fr 1fr 0.5fr;
+    }
+
+    &:nth-child(3) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .comment {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 2rem;
+    }
+
+    .todo {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 2rem;
+    }
+
+    .messages {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 2rem;
+    }
+
+    .notification {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 2rem;
+    }
+
+    .calendar {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 2rem;
+    }
+
+    .friends {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 2rem;
+    }
+
+    .bentoInnerBox {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 1.5rem;
+
+      .contact {
+        width: 100%;
+        height: 100%;
+        background: white;
+        border-radius: 2rem;
+      }
+
+      .miniBentoBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+        .suggestion {
+          width: 100%;
+          height: 100%;
+          background: white;
+          border-radius: 2rem;
+        }
+
+        .logo {
+          width: 100%;
+          height: 100%;
+          background: white;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}

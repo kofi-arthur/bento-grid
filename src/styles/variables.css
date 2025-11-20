@@ -1,0 +1,168 @@
+:root {
+  /* Colors */
+  --color-primary: hsl(216, 83%, 40%);
+  --color-primary-hover: hsl(216, 83%, 32%);
+
+  --color-bg: hsl(0, 100%, 100%);
+  --color-tile: hsl(0, 100%, 100%);
+
+  --color-btn-disabled: hsl(0, 0%, 78%);
+
+  --color-text: hsl(0, 0%, 13%);
+  --color-text-light: hsl(0, 0%, 100%);
+  --color-text-dark: hsl(0, 0%, 10%);
+  --color-text-muted: hsl(208, 7%, 46%);
+  --color-selection: hsla(216, 86%, 52%, 0.5);
+
+  --color-border: hsl(0, 0%, 88%);
+
+  /* Status Colors (optional) */
+  --color-success: hsl(134, 61%, 41%);
+  --color-warning: hsl(45, 100%, 51%);
+  --color-error: hsl(354, 92%, 36%);
+  --color-info: hsl(207, 84%, 41%);
+
+  /* Font Sizes */
+  --font-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); /* ~12–14px */
+  --font-sm: clamp(0.875rem, 0.8rem + 0.2vw, 1rem); /* ~14–16px */
+  --font-md: clamp(1rem, 0.9rem + 0.3vw, 1.125rem); /* ~16–18px */
+  --font-lg: clamp(1.125rem, 1.05rem + 0.5vw, 1.5rem); /* ~18–24px */
+  --font-xl: clamp(1.5rem, 1.1rem + 0.7vw, 2rem); /* ~24–32px */
+  --font-xxl: clamp(2.5rem, 1.2rem + 1vw, 3rem);
+
+  /* Spacing */
+  --spacing-xxs: min(0.25em, 2vw);
+  --spacing-xs: min(0.5em, 2vw);
+  --spacing-sm: min(1em, 2vw);
+  --spacing-md: min(2em, 2vw);
+  --spacing-lg: min(2em, 2vw);
+  --spacing-xl: min(4em, 2vw);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-round: 50%;
+
+  /* Break Points */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* Animations */
+  --anim-fade-in: fadeIn 0.2s ease-in forwards;
+  --anim-fade-in-from-top: fadeIn 0.2s ease-in forwards;
+  --anim-fade-in-from-bottom: fadeInFromBottom 0.3s ease-in forwards;
+  --anim-fade-in-from-left: fadeIn 0.2s ease-in forwards;
+  --anim-fade-in-from-right: fadeIn 0.2s ease-in forwards;
+  /* ---------------------------------------------------------------------- */
+  --anim-slide-in-from-left: slideInFromLeft 0.35s ease-out;
+  --anim-slide-in-from-right: slideInFromRight 0.35s ease-out;
+  /* ---------------------------------------------------------------------- */
+  --anim-breath: breath 3.5s ease-in-out infinite;
+}
+
+.dark {
+  --color-primary: hsl(216, 86%, 52%);
+  --color-primary-hover: hsl(216, 86%, 42%);
+
+  --color-bg: hsl(0, 0%, 04%);
+  --color-tile: hsl(0, 0%, 20%);
+
+  --color-btn-disabled: hsl(0, 0%, 28%);
+
+  --color-text: hsl(0, 0%, 90%);
+  --color-text-light: hsl(0, 0%, 90%);
+  --color-text-dark: hsl(0, 0%, 10%);
+  --color-text-muted: hsl(208, 7%, 46%);
+
+  --color-border: hsl(0, 0%, 38%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
