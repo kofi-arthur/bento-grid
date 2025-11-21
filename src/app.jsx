@@ -158,6 +158,7 @@ export default function App() {
 
                     <section className={styles.miniBentoBox}>
                         <div className={styles.suggestion}></div>
+
                         <div className={styles.logo}></div>
                     </section>
                 </section>
