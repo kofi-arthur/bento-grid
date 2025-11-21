@@ -1,6 +1,10 @@
 import styles from './styles/app.module.css'
 
 import user from './assets/user.png'
+import user1 from './assets/pp01.jpg'
+import user2 from './assets/pp02.jpg'
+import user3 from './assets/pp03.jpg'
+import user4 from './assets/pp04.jpg'
 
 export default function App() {
     return (
@@ -79,16 +83,16 @@ export default function App() {
                 <div className={styles.messages}>
                     <div className={styles.peopleList}>
                         <div className={styles.profile}>
-                            <img src={user} alt="" />
+                            <img src={user1} alt="" />
                         </div>
                         <div className={styles.profile}>
-                            <img src={user} alt="" />
+                            <img src={user2} alt="" />
                         </div>
                         <div className={styles.profile}>
-                            <img src={user} alt="" />
+                            <img src={user3} alt="" />
                         </div>
                         <div className={styles.profile}>
-                            <img src={user} alt="" />
+                            <img src={user4} alt="" />
                         </div>
                     </div>
 
