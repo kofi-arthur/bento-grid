@@ -98,7 +98,35 @@ export default function App() {
                     </div>
                 </div>
 
-                <div className={styles.notification}></div>
+                <div className={styles.notification}>
+                    <div className={styles.header}>
+                        <div className={styles.greeting}>
+                            <span>Welcome back !</span>
+                            <h2>Themanwitha Mask</h2>
+                        </div>
+
+                        <div className={styles.profile}>
+                            <img src={user} alt="" />
+                        </div>
+                    </div>
+
+                    <div className={styles.notificationList}>
+                        <div className={styles.header}>
+                            <span className={styles.lastSeen}>Yesterday, 10:12 am</span>
+                            <button className={styles.markAsRead}>Mark as read</button>
+                        </div>
+
+                        <div className={styles.notificationItemContainer}>
+                            <div className={styles.notificationItem}>
+                                <div className={styles.icon}>
+                                    <i className="fal fa-comment"></i>
+                                </div>
+
+                                <p>Catch up later this week to review our progress on integrating new ios features into Tailwag ???</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className={styles.calendar}>
                     <div className={styles.topHeader}>
