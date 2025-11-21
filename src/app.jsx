@@ -76,11 +76,46 @@ export default function App() {
             </section>
 
             <section className={styles.bentoBox}>
-                <div className={styles.messages}></div>
+                <div className={styles.messages}>
+                    <div className={styles.peopleList}>
+                        <div className={styles.profile}>
+                            <img src={user} alt="" />
+                        </div>
+                        <div className={styles.profile}>
+                            <img src={user} alt="" />
+                        </div>
+                        <div className={styles.profile}>
+                            <img src={user} alt="" />
+                        </div>
+                        <div className={styles.profile}>
+                            <img src={user} alt="" />
+                        </div>
+                    </div>
+
+                    <div className={styles.info}>
+                        <h3>27 New Messages</h3>
+                        <span>• 12 People</span>
+                    </div>
+                </div>
 
                 <div className={styles.notification}></div>
 
-                <div className={styles.calendar}></div>
+                <div className={styles.calendar}>
+                    <div className={styles.topHeader}>
+                        <span className={styles.day}>Wednesday</span>
+                        <h1>Dec 14</h1>
+                    </div>
+
+                    <div className={styles.user}>
+                        <div className={styles.profile}>
+                            <img src={user} alt="" />
+                        </div>
+                        <div className={styles.info}>
+                            <h3>Happy Birthday!</h3>
+                            <span>S. Lusan</span>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section className={styles.bentoBox}>
