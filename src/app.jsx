@@ -5,6 +5,7 @@ import user1 from './assets/pp01.jpg'
 import user2 from './assets/pp02.jpg'
 import user3 from './assets/pp03.jpg'
 import user4 from './assets/pp04.jpg'
+import logo from './assets/logo.svg'
 
 export default function App() {
     return (
@@ -299,7 +300,9 @@ export default function App() {
                             </div>
                         </div>
 
-                        <div className={styles.logo}></div>
+                        <div className={styles.logo}>
+                            <img src={logo} alt="" />
+                        </div>
                     </section>
                 </section>
             </section>
