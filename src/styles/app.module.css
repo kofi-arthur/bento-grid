@@ -486,14 +486,14 @@
       position: relative;
 
       .title {
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
         font-size: 1rem;
         font-weight: 600;
         margin-bottom: 0.5rem;
       }
 
       .actionContainer {
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -578,7 +578,7 @@
       .miniTitle {
         display: flex;
         align-items: center;
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
         justify-content: space-between;
 
         h3 {
@@ -600,7 +600,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding-inline: 1rem;
+          padding-inline: 1.5rem;
           padding-block: 1rem;
           border-bottom: 1px solid #ddd;
           gap: 0.5rem;
@@ -699,6 +699,109 @@
         height: 100%;
         background: white;
         border-radius: 2rem;
+        overflow: hidden;
+
+        .addressBox {
+          margin: 1.5rem;
+          background: #eee;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          border-radius: 1rem;
+
+          .address {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            i {
+              font-size: 0.9rem;
+              color: #aaa;
+            }
+
+            h3 {
+              font-size: 0.8rem;
+              font-weight: 600;
+            }
+          }
+
+          .activity {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .circle {
+              content: "";
+              padding: 0.2rem;
+              font-size: 0.5rem;
+              background: #55eb69;
+              border-radius: 50%;
+
+              .innerCircle {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: green;
+              }
+            }
+
+            span {
+              color: #aaa;
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        .title {
+          padding-inline: 1.5rem;
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+
+        .primaryContact {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-inline: 1.5rem;
+          padding-bottom: 0.2rem;
+          border-bottom: 1px solid #ddd;
+
+          .profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            h1 {
+              font-size: 0.9rem;
+              font-weight: 600;
+            }
+          }
+
+          .users {
+            img {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              object-fit: cover;
+              margin-left: -0.7rem;
+              border: 2px solid white;
+
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
       }
 
       .miniBentoBox {

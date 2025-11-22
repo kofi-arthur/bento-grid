@@ -246,7 +246,38 @@ export default function App() {
                 </div>
 
                 <section className={styles.bentoInnerBox}>
-                    <div className={styles.contact}></div>
+                    <div className={styles.contact}>
+                        <div className={styles.addressBox}>
+                            <div className={styles.address}>
+                                <i className="fas fa-house-blank"></i>
+                                <h3>71812 Parison Bla Vasta Gerachvane</h3>
+                            </div>
+
+                            <div className={styles.activity}>
+                                <div className={styles.circle}>
+                                    <div className={styles.innerCircle}></div>
+                                </div>
+                                <span>4 Active</span>
+                            </div>
+                        </div>
+
+                        <h3 className={styles.title}>Primary Contact</h3>
+
+                        <div className={styles.primaryContact}>
+                            <div className={styles.profile}>
+                                <img src={user1} alt="" />
+
+                                <h1>Carol Show</h1>
+                            </div>
+
+                            <div className={styles.users}>
+                                <img src={user1} alt="" />
+                                <img src={user2} alt="" />
+                                <img src={user3} alt="" />
+                            </div>
+                        </div>
+
+                    </div>
 
                     <section className={styles.miniBentoBox}>
                         <div className={styles.suggestion}></div>
