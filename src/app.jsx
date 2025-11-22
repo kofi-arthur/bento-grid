@@ -151,7 +151,99 @@ export default function App() {
             </section>
 
             <section className={styles.bentoBox}>
-                <div className={styles.friends}></div>
+                <div className={styles.friends}>
+                    <h3 className={styles.title}>Find Friends</h3>
+
+                    <div className={styles.actionContainer}>
+                        <div className={styles.online}>
+                            <div className={styles.profile}><img src={user1} alt="" /></div>
+                            <div className={styles.profile}><img src={user2} alt="" /></div>
+                            <div className={styles.profile}><img src={user3} alt="" /></div>
+                            <div className={styles.profile}><span>+2</span></div>
+                        </div>
+
+                        <div className={styles.addFriends}>
+                            <input type="text" placeholder='Add Friends' />
+                            <button><i className="far fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div className={styles.miniTitle}>
+                        <h3>Other members</h3>
+                        <span>27 friends</span>
+                    </div>
+
+                    <div className={styles.friendList}>
+                        <div className={styles.friend}>
+                            <div className={styles.userInfo}>
+                                <div className={styles.profile}>
+                                    <img src={user1} alt="" />
+                                </div>
+
+                                <div className={styles.info}>
+                                    <h3>William Moore</h3>
+                                    <a href="mailto:william@cloud.com">william@cloud.com</a>
+                                </div>
+                            </div>
+
+                            <button><i className="far fa-plus"></i></button>
+                        </div>
+
+                        <div className={styles.friend}>
+                            <div className={styles.userInfo}>
+                                <div className={styles.profile}>
+                                    <img src={user2} alt="" />
+                                </div>
+
+                                <div className={styles.info}>
+                                    <h3>Linda Wilson</h3>
+                                    <a href="mailto:linda22@cloud.com">linda22@cloud.com</a>
+                                </div>
+                            </div>
+
+                            <button><i className="far fa-plus"></i></button>
+                        </div>
+
+                        <div className={styles.friend}>
+                            <div className={styles.userInfo}>
+                                <div className={styles.profile}>
+                                    <img src={user3} alt="" />
+                                </div>
+
+                                <div className={styles.info}>
+                                    <h3>Patricia Davis</h3>
+                                    <a href="mailto:patriciada@cloud.com">patriciada@cloud.com</a>
+                                </div>
+                            </div>
+
+                            <button><i className="far fa-plus"></i></button>
+                        </div>
+
+                        <div className={styles.friend}>
+                            <div className={styles.userInfo}>
+                                <div className={styles.profile}>
+                                    <img src={user4} alt="" />
+                                </div>
+
+                                <div className={styles.info}>
+                                    <h3>Patricia Davis</h3>
+                                    <a href="mailto:patriciada@cloud.com">patriciada@cloud.com</a>
+                                </div>
+                            </div>
+
+                            <button><i className="far fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div className={styles.toast}>
+                        <p>Request Sent</p>
+                        <div className={styles.profile}>
+                            <img src={user1} alt="" />
+                        </div>
+                    </div>
+                </div>
 
                 <section className={styles.bentoInnerBox}>
                     <div className={styles.contact}></div>

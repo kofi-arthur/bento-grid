@@ -2,23 +2,23 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 1fr 1.5fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
   place-items: center;
   padding: 1rem;
   gap: 1rem;
 
   .bentoBox {
-    width: 800px;
+    width: 850px;
     height: fit-content;
     display: grid;
     gap: 1rem;
 
     &:nth-child(1) {
-      grid-template-columns: 1.45fr 0.55fr;
+      grid-template-columns: 1.4fr 0.45fr;
     }
 
     &:nth-child(2) {
-      grid-template-columns: 0.55fr 0.85fr 0.55fr;
+      grid-template-columns: 0.45fr 0.9fr 0.45fr;
     }
 
     &:nth-child(3) {
@@ -120,7 +120,7 @@
       }
 
       .commentAction {
-        border-top: 1px solid #cccccc;
+        border-top: 1px solid #eee;
         padding-top: 1rem;
         padding-inline: 1rem;
         display: grid;
@@ -478,9 +478,213 @@
 
     .friends {
       width: 100%;
-      height: 400px;
+      height: 440px;
       background: white;
       border-radius: 2rem;
+      padding-block: 1.5rem 1rem;
+      overflow: hidden;
+      position: relative;
+
+      .title {
+        padding-inline: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .actionContainer {
+        padding-inline: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .online {
+          display: flex;
+          align-items: center;
+
+          .profile {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ddd;
+            border: 2px solid white;
+            margin-left: -0.7rem;
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            span {
+              font-size: 0.8rem;
+              font-weight: 600;
+              color: #888;
+            }
+          }
+        }
+
+        .addFriends {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          background: #eee;
+          border-radius: 32px;
+          padding: 0.3rem;
+
+          input {
+            width: 100px;
+            border: none;
+            background: none;
+            padding-inline: 0.7rem 0.5rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+
+            &::placeholder {
+              color: #aaa;
+            }
+          }
+
+          button {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      hr {
+        width: 100%;
+        border: 1px dashed #ccc;
+        height: 1px;
+        background: none;
+        margin-block: 1rem;
+      }
+
+      .miniTitle {
+        display: flex;
+        align-items: center;
+        padding-inline: 1rem;
+        justify-content: space-between;
+
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        span {
+          color: #aaa;
+          font-size: 0.8rem;
+        }
+      }
+
+      .friendList {
+        display: flex;
+        flex-direction: column;
+
+        .friend {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-inline: 1rem;
+          padding-block: 1rem;
+          border-bottom: 1px solid #ddd;
+          gap: 0.5rem;
+
+          .userInfo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+
+            .profile {
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              overflow: hidden;
+              background: #ddd;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .info {
+              display: flex;
+              flex-direction: column;
+
+              h3 {
+                font-size: 0.9rem;
+                line-height: 0.9rem;
+                font-weight: 600;
+              }
+
+              a {
+                color: #aaa;
+                font-size: 0.7rem;
+              }
+            }
+          }
+
+          button {
+            width: 35px;
+            height: 35px;
+            background: #eee;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .toast {
+        position: absolute;
+        bottom: 1rem;
+        justify-self: center;
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.3rem;
+        border-radius: 36px;
+
+        p {
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 400;
+          padding: 0.5rem;
+        }
+
+        .profile {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          overflow: hidden;
+          background: #ddd;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
     }
 
     .bentoInnerBox {
