@@ -735,7 +735,7 @@
               content: "";
               padding: 0.2rem;
               font-size: 0.5rem;
-              background: #55eb69;
+              background: #96ffa4;
               border-radius: 50%;
 
               .innerCircle {
@@ -743,7 +743,7 @@
                 width: 5px;
                 height: 5px;
                 border-radius: 50%;
-                background: green;
+                background: #22d422;
               }
             }
 
@@ -814,6 +814,71 @@
           height: 100%;
           background: white;
           border-radius: 2rem;
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .title {
+            font-size: 0.7rem;
+            color: #aaa;
+          }
+
+          .contactCard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .profile {
+              width: 62px;
+              height: 62px;
+              border-radius: 50%;
+              overflow: hidden;
+              background: #ddd;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            h3 {
+              margin-top: 0.5rem;
+              font-size: 0.9rem;
+              font-weight: 600;
+            }
+
+            p {
+              font-size: 0.7rem;
+              color: #aaa;
+
+              span {
+                color: #00a2ff;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .paginationContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+
+            .pagination {
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background: #aaa;
+
+              &:nth-child(2) {
+                width: 5px;
+                height: 5px;
+                background: #333;
+              }
+            }
+          }
         }
 
         .logo {

@@ -280,7 +280,24 @@ export default function App() {
                     </div>
 
                     <section className={styles.miniBentoBox}>
-                        <div className={styles.suggestion}></div>
+                        <div className={styles.suggestion}>
+                            <span className={styles.title}>Siri Suggestions</span>
+
+                            <div className={styles.contactCard}>
+                                <div className={styles.profile}>
+                                    <img src={user1} alt="" />
+                                </div>
+
+                                <h3>Add Safina</h3>
+                                <p><span>@saffina28</span> on Instagram</p>
+                            </div>
+
+                            <div className={styles.paginationContainer}>
+                                <span className={styles.pagination}></span>
+                                <span className={styles.pagination}></span>
+                                <span className={styles.pagination}></span>
+                            </div>
+                        </div>
 
                         <div className={styles.logo}></div>
                     </section>
